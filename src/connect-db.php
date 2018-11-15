@@ -6,7 +6,7 @@ $db = "bestcoun_trabalho_fq";
 
 $conn = new mysqli($host, $user, $password);
 
-if(!$conn->connection_error){
+if($conn){
     echo "conectado com sucesso";
 }else{
     echo "erro ao conectar";
