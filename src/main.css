@@ -6,15 +6,16 @@ body{
 }
 
 nav{
-    
+    background-color: #34495e;
+    padding: .1em 0
 }
 
 .navItem{
-    background-color: #34495e;
+    margin: .8em;
 }
 
 .navItem img{
-    width: 4%;
+    width: 3%;
 }
 
 .navItem a{
@@ -24,5 +25,5 @@ nav{
     position: fixed;
     top: 6%;
     font-weight: bold;
-    
+    transform: translateY(-100%);
 }
