@@ -14,7 +14,8 @@ nav{
 }
 
 .navItem img{
-    width: 4%;
+    width: 3%;
+    margin: .5em;
 }
 
 .navItem a{
@@ -24,5 +25,5 @@ nav{
     position: fixed;
     top: 6%;
     font-weight: bold;
-    
+    transform: translateY(-100%);
 }
