@@ -6,16 +6,16 @@ body{
 }
 
 nav{
-    
+    background-color: #34495e;
+    padding: .1em 0
 }
 
 .navItem{
-    background-color: #34495e;
+    margin: .8em;
 }
 
 .navItem img{
     width: 3%;
-    margin: .5em;
 }
 
 .navItem a{
