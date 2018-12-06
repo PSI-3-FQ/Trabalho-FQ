@@ -27,3 +27,9 @@ nav{
     font-weight: bold;
     transform: translateY(-100%);
 }
+
+.item{
+    text-align: center;
+    margin: 1em 3em;
+    transform: translateX(50%, -50%);
+}
