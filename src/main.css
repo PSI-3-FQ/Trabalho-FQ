@@ -1,5 +1,11 @@
  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
+ *{
+
+    box-sizing: border-box;    
+
+ }
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -33,17 +39,59 @@ nav{
 }
 
 .item{
-    text-align: center;
-    margin: 1em 3em;
+        
+    height: 92vh;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10%;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade {
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.tabelaperiodicainformations{
+
+    position: relative;
+    height: 50vh;
+    background-color: gray;
+
+}
+
+.footer{
+
+    position: relative;
+    height: 50vh;
+    background-color: black;
+
 }
 
 .navItem button:hover{
-    background-color: #314052;
+    background-color: #314052;    
 }
-
-
-
-
 
 .shake {
     -webkit-animation-name: shake-7;
@@ -68,10 +116,11 @@ nav{
 
 .shake{   
         -webkit-animation-duration: 100ms;
-                animation-duration: 100ms; }
+        animation-duration: 100ms; }
 
 .slow {
-                    -webkit-animation-duration: 1000ms !important;
-                            animation-duration: 1000ms !important; }
+        -webkit-animation-duration: 1000ms !important;
+        animation-duration: 1000ms !important; 
+}
 
 
