@@ -12,7 +12,7 @@
 
 <body>
     <nav>
-        <div class="navItem shake slow">
+        <section class="navItem shake slow">
 
             <div id="btn-esquerda">              
                 <button href="" ><img src="src/icon/periodic-table.svg" alt="">Tabela Periódica</button>
@@ -26,19 +26,64 @@
                 <button href=""><img src="src/icon/confetti.svg" alt="">150 Anos</button>
             </div>
 
-        </div>
+        </section>
     </nav>
 
-    <div class="item">
-        <h2 class="title">150 Anos Tabela Periodica!</h2>
-        <div class="content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-        </div>
-    </div>
+    <section class="item">
+
+        <section class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="src/Imagens/135095_w840h0_1519071817maquiagem-neon-shutterstock.jpg" style="width:100%">
+            <div class="text">Slide 1</div>
+        </section>
+          
+          <section class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="src/Imagens/tabelaperiodica.jpg" style="width:100%">
+            <div class="text">Slide 2</div>
+          </section>
+          
+          <section class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="src/Imagens/_95585255_he.jpg" style="width:100%">
+            <div class="text">Slide 3</div>
+          </section>          
+
+    </section>
+
+    <section class="tabelaperiodicainformations">
+
+        
+
+    </section>
+
+    <footer class="footer">
+
+
+
+    </footer>
+
+    <script>
+
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");                
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                }
+                slideIndex++;
+
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }                               
+                slides[slideIndex-1].style.display = "block";                
+                setTimeout(showSlides, 5000);
+            }
+
+    </script>            
+
 </body>
 </html>
