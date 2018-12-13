@@ -123,4 +123,6 @@ nav{
         animation-duration: 1000ms !important; 
 }
 
-
+@media only screen and (max-width: 900px){
+    
+}
