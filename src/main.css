@@ -21,7 +21,8 @@ nav{
 }
 
 .navItem img{
-    width: 9%;
+    width: 12%;
+    margin-right: 10px;
 }
 
 .navItem button{
@@ -123,6 +124,6 @@ nav{
         animation-duration: 1000ms !important; 
 }
 
-@media only screen and (max-width: 900px){
-    
+.center{
+    text-align: center;
 }
