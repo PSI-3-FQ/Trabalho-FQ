@@ -1,62 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
-    <link rel="Esco Icon" href="esco.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tabela Periódica</title>
-    <link rel="stylesheet" href="src/main.css">
-    <script src="src/main.js"></script>
-    <style>
-        img{
-            max-width: 700px
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tabela Periodica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/tabelaperiodica.css" />
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <nav>
-        <section class="navItem shake slow">
 
-            <div id="btn-menu">
-                <a href="index.html">
-                    <button type="button">
-                        <img src="src/icon/big-and-small-dots.svg" alt="">Página Principal</button></a>
-            </div>
+    <section class="periodo">
+        <div class="naometais" id="gasosos">H</div>
+        <div class="gasesnobres" id="gasosos">He</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">Li</div>
+        <div class="metaisalcalinoterrosos">Be</div>
+        <div class="semimetais">B</div>
+        <div class="naometais">C</div>
+        <div class="naometais" id="gasosos">N</div>
+        <div class="naometais" id="gasosos">O</div>
+        <div class="naometais" id="gasosos">F</div>
+        <div class="gasesnobres" id="gasosos">Ne</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">Na</div>
+        <div class="metaisalcalinoterrosos">Mg</div>
+        <div class="metaispostransicao">Al</div>
+        <div class="semimetais">Si</div>
+        <div class="naometais">P</div>
+        <div class="naometais">S</div>
+        <div class="naometais" id="gasosos">CI</div>
+        <div class="gasesnobres" id="gasosos">Ar</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">K</div>
+        <div class="metaisalcalinoterrosos">Ca</div>
+        <div class="metaistransicao">Sc</div>
+        <div class="metaistransicao">Ti</div>
+        <div class="metaistransicao">V</div>
+        <div class="metaistransicao">Cr</div>
+        <div class="metaistransicao">Mn</div>
+        <div class="metaistransicao">Fe</div>
+        <div class="metaistransicao">Co</div>
+        <div class="metaistransicao">Ni</div>
+        <div class="metaistransicao">Cu</div>
+        <div class="metaistransicao">Zn</div>
+        <div class="metaispostransicao">Ga</div>
+        <div class="semimetais">Ge</div>
+        <div class="semimetais">As</div>
+        <div class="naometais">Se</div>
+        <div class="naometais" id="liquidos">Br</div>
+        <div class="gasesnobres" id="gasosos">Kr</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">Rb</div>
+        <div class="metaisalcalinoterrosos">Sr</div>
+        <div class="metaistransicao">Y</div>
+        <div class="metaistransicao">Zr</div>
+        <div class="metaistransicao">Nb</div>
+        <div class="metaistransicao">Mo</div>
+        <div class="metaistransicao">Tc</div>
+        <div class="metaistransicao">Ru</div>
+        <div class="metaistransicao">Rh</div>
+        <div class="metaistransicao">Pd</div>
+        <div class="metaistransicao">Ag</div>
+        <div class="metaistransicao">Cd</div>
+        <div class="metaispostransicao">In</div>
+        <div class="metaispostransicao">Sn</div>
+        <div class="semimetais">Sb</div>
+        <div class="semimetais">Te</div>
+        <div class="naometais">I</div>
+        <div class="gasesnobres" id="gasosos">Xe</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">Cs</div>
+        <div class="metaisalcalinoterrosos">Ba</div>
+        <div class="lantanoides">*</div>
+        <div class="metaistransicao">Hf</div>
+        <div class="metaistransicao">Ta</div>
+        <div class="metaistransicao">W</div>
+        <div class="metaistransicao">Re</div>
+        <div class="metaistransicao">Os</div>
+        <div class="metaistransicao">Ir</div>
+        <div class="metaistransicao">Pt</div>
+        <div class="metaistransicao">Au</div>
+        <div class="metaistransicao" id="liquidos">Hg</div>
+        <div class="metaispostransicao">Tl</div>
+        <div class="metaispostransicao">Pb</div>
+        <div class="metaispostransicao">Bi</div>
+        <div class="metaispostransicao">Po</div>
+        <div class="semimetais">At</div>
+        <div class="gasesnobres" id="gasosos">Rn</div>
+    </section>
+    <section class="periodos">
+        <div class="metaisalcalinos">Fr</div>
+        <div class="metaisalcalinoterrosos">Ra</div>
+        <div class="actinoides">**</div>
+        <div class="metaistransicao" id="desconhecidos">Rf</div>
+        <div class="metaistransicao" id="desconhecidos">Db</div>
+        <div class="metaistransicao" id="desconhecidos">Sg</div>
+        <div class="metaistransicao" id="desconhecidos">Bh</div>
+        <div class="metaistransicao" id="desconhecidos">Hs</div>
+        <div id="desconhecidos">Mt</div>
+        <div id="desconhecidos">Ds</div>
+        <div id="desconhecidos">Rg</div>
+        <div class="metaistransicao" id="desconhecidos">Cn</div>
+        <div id="desconhecidos">Nh</div>
+        <div class="metaispostransicao" id="desconhecidos">Fi</div>
+        <div id="desconhecidos">Mc</div>
+        <div id="desconhecidos">Lv</div>
+        <div id="desconhecidos">Ts</div>
+        <div id="desconhecidos">Og</div>
+    </section>
+    <section class="period">
+        <div class="lantanoides">*</div>
+        <div class="lantanoides">La</div>
+        <div class="lantanoides">Ce</div>
+        <div class="lantanoides">Pr</div>
+        <div class="lantanoides">Nd</div>
+        <div class="lantanoides">Pm</div>
+        <div class="lantanoides">Sm</div>
+        <div class="lantanoides">Eu</div>
+        <div class="lantanoides">Gd</div>
+        <div class="lantanoides">Tb</div>
+        <div class="lantanoides">Dy</div>
+        <div class="lantanoides">Ho</div>
+        <div class="lantanoides">Er</div>
+        <div class="lantanoides">Tm</div>
+        <div class="lantanoides">Yb</div>
+        <div class="lantanoides">Lu</div>
+    </section>
+    <section class="period">
+        <div class="actinoides">**</div>
+        <div class="actinoides">Ac</div>
+        <div class="actinoides">Th</div>
+        <div class="actinoides">Pa</div>
+        <div class="actinoides">U</div>
+        <div class="actinoides">Np</div>
+        <div class="actinoides">Pu</div>
+        <div class="actinoides">Am</div>
+        <div class="actinoides">Cm</div>
+        <div class="actinoides">Bk</div>
+        <div class="actinoides">Cf</div>
+        <div class="actinoides">Es</div>
+        <div class="actinoides">Fm</div>
+        <div class="actinoides">Md</div>
+        <div class="actinoides">No</div>
+        <div class="actinoides">Lr</div>
+    </section>
 
-            <div id="btn-esquerda">
-                <a href="tabelaperiodica.html">
-                    <button type="button">
-                        <img src="src/icon/periodic-table.svg" alt="">Tabela Periódica</button></a>
-            </div>
-
-            <div id="btn-meio">
-                <a href="quemsomos.html">
-                    <button type="button">
-                        <img src="src/icon/multiple-users-silhouette.svg" alt="">Quem somos?</button></a>
-            </div>
-
-            <div id="btn-direita">
-                <a href="anos.html">
-                    <button type="button">
-                        <img src="src/icon/confetti.svg" alt="">150 Anos</button></a>
-            </div>
-
-        </section>
-    </nav>
-
-    <div class="slider" style="max-width:400px">
-        <img class="mySlides" src="src/Imagens/img1.jpg" style="width:100%">
-        <img class="mySlides" src="src/Imagens/img2.jpg" style="width:100%">
-        <img class="mySlides" src="src/Imagens/img3.jpg" style="width:100%">
-    </div>
-
-    <footer class="footer">
-        <div class="bottom1">
-            <img src="src/Imagens/logoesco.png" class="logo1">
-            <img src="src/Imagens/logos-footer.png" class="logos2" width="70%">
-        </div>
-    </footer>
 </body>
+
 </html>
