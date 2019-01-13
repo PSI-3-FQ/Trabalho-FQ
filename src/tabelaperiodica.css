@@ -1,3 +1,71 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#808e9b;
+}
+
+nav{
+    background-color: #34495e;
+    padding: .1em 0
+}
+
+.navItem{
+    margin: .8em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navItem img{
+    width: 12%;
+    margin-right: 10px;
+}
+
+.navItem button{
+    background-color: #34495e;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    top: 6%;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    width: 300px;
+}
+
+.navItem button:hover{
+    background-color: #314052;    
+}
+
+.shake {
+    -webkit-animation-name: shake-7;
+            animation-name: shake-7; }
+  
+  @-webkit-keyframes shake-7 {
+    0%, 10%,  30%,  50%,  70% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%); }
+    5%, 15%,  35%,  55%,  75% {
+      -webkit-transform: translateX(-1%);
+              transform: translateX(-1%); } }
+  
+  @keyframes shake-7 {
+    0%, 10%, 30%, 50%, 70% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%); }
+    5%, 15%, 35%, 55%, 75% {
+      -webkit-transform: translateX(-1%);
+              transform: translateX(-1%); } 
+    }
+
+.shake{   
+        -webkit-animation-duration: 100ms;
+        animation-duration: 100ms; }
+
+.slow {
+        -webkit-animation-duration: 1000ms !important;
+        animation-duration: 1000ms !important; 
+}
+
 .periodo {
 
     display: flex; 
