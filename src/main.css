@@ -63,6 +63,26 @@ nav{
     border-radius: 10%;
 }
 
+.footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+    background-color: #34495e;
+    width: 100%
+}
+
+.logo1{
+    margin: 0 auto;
+    max-width: 7%;
+    float: left;
+}
+
+.logos2{
+    margin: 0 auto;
+    height: 7%;
+    display: block;
+}
+
 .fade {
 
     animation-name: fade;
@@ -83,13 +103,11 @@ nav{
 
 }
 
-.footer{
-
-    position: relative;
-    height: 50vh;
-    background-color: black;
-
+#Branco{
+    color: white;
+    text-align: center;
 }
+
 
 .navItem button:hover{
     background-color: #314052;    
