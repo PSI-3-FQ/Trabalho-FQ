@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onload="myVar = setInterval(myFunction, 1000)">
+
+<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+<p>Click "Stop" to prevent the first function to execute.</p>
+<p>(You must click "Stop" before the 3 seconds are up.)</p>
+<p id="i"></p>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>
+
+<script>
+	var i = 0;
+function myFunction() {
+	document.getElementById("i").innerHTML = i;
+    i++;
+	if(i>10){
+    	i=0;
+        }
+}
+</script>
+</body>
+</html>
