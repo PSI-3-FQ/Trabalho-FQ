@@ -1,71 +1,72 @@
-body{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color:#808e9b;
-}
+@color_1: white;
+@font_family_1: 'Montserrat', sans-serif;
+@background_color_1: #808e9b;
+@background_color_2: #34495e;
+@background_color_3: #314052;
 
-nav{
-    background-color: #34495e;
-    padding: .1em 0
+@-webkit-keyframes shake-7 {
+	0%,10%,30%,50%,70% {
+		-webkit-transform: translateX(1%);
+		transform: translateX(1%);
+	}
+	5%,15%,35%,55%,75% {
+		-webkit-transform: translateX(-1%);
+		transform: translateX(-1%);
+	}
 }
-
-.navItem{
-    margin: .8em;
-    display: flex;
-    justify-content: space-around;
+@keyframes shake-7 {
+	0%,10%,30%,50%,70% {
+		-webkit-transform: translateX(1%);
+		transform: translateX(1%);
+	}
+	5%,15%,35%,55%,75% {
+		-webkit-transform: translateX(-1%);
+		transform: translateX(-1%);
+	}
 }
-
-.navItem img{
-    width: 12%;
-    margin-right: 10px;
+body {
+	margin: 0;
+	font-family: @font_family_1;
+	background-color: @background_color_1;
 }
-
-.navItem button{
-    background-color: #34495e;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    top: 6%;
-    font-weight: bold;
-    border: none;
-    text-align: center;
-    width: 300px;
+nav {
+	background-color: @background_color_2;
+	padding: .1em 0;
 }
-
-.navItem button:hover{
-    background-color: #314052;    
+.navItem {
+	margin: .8em;
+	display: flex;
+	justify-content: space-around;
+	img {
+		width: 12%;
+		margin-right: 10px;
+	}
+	button {
+		background-color: @background_color_2;
+		color: @color_1;
+		text-decoration: none;
+		font-size: 30px;
+		top: 6%;
+		font-weight: bold;
+		border: none;
+		text-align: center;
+		width: 300px;
+		&:hover {
+			background-color: @background_color_3;
+		}
+	}
 }
-
 .shake {
-    -webkit-animation-name: shake-7;
-            animation-name: shake-7; }
-  
-  @-webkit-keyframes shake-7 {
-    0%, 10%,  30%,  50%,  70% {
-      -webkit-transform: translateX(1%);
-              transform: translateX(1%); }
-    5%, 15%,  35%,  55%,  75% {
-      -webkit-transform: translateX(-1%);
-              transform: translateX(-1%); } }
-  
-  @keyframes shake-7 {
-    0%, 10%, 30%, 50%, 70% {
-      -webkit-transform: translateX(1%);
-              transform: translateX(1%); }
-    5%, 15%, 35%, 55%, 75% {
-      -webkit-transform: translateX(-1%);
-              transform: translateX(-1%); } 
-    }
-
-.shake{   
-    -webkit-animation-duration: 100ms;
-    animation-duration: 100ms; 
+	-webkit-animation-name: shake-7;
+	animation-name: shake-7;
+	-webkit-animation-duration: 100ms;
+	animation-duration: 100ms;
 }
-
 .slow {
-    -webkit-animation-duration: 1000ms;
-    animation-duration: 1000ms; 
+	-webkit-animation-duration: 1000ms;
+	animation-duration: 1000ms;
 }
+/////////////////////
 
 // Mixins
 .transition(@args) {
