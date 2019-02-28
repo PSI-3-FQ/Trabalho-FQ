@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="Esco Icon" href="esco.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela Periodica - PSI3</title>
+    <link rel="stylesheet" href="src/main.css">
+    <style>
+        img{
+            max-width: 700px
+        }
+        h1{
+            font-size: 40px
+        }
+
+        * {box-sizing: border-box;}
+
+        .container {
+        position: relative;
+        width: 50%;
+        max-width: 300px;
+        }
+
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
+        .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .container:hover .overlay {
+        opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <section class="navItem shake slow">
+        
+            <div id="btn-menu">
+                <a href="index.html">
+                    <button type="button">
+                        <img src="src/icon/big-and-small-dots.svg" alt="">Página Principal</button></a>
+            </div>
+        
+            <div id="btn-esquerda">
+                <a href="tabela_periodica.html">
+                    <button type="button">
+                        <img src="src/icon/periodic-table.svg" alt="">Tabela Periódica</button></a>
+            </div>
+        
+            <div id="btn-meio">
+                <a href="develovers.html">
+                    <button type="button">
+                        <img src="src/icon/multiple-users-silhouette.svg" alt="">Developers</button></a>
+            </div>
+        
+            <div id="btn-direita">
+                <a href="anos.html">
+                    <button type="button">
+                        <img src="src/icon/confetti.svg" alt="">150 Anos</button></a>
+            </div>
+        
+        </section>
+    </nav>
+
+    <div class="content center">
+        <h1>Developers</h1>
+        <p>This are the progremmers.</p>
+
+        <div class="container">
+            <img src="src/Imagens/2506.jpg" alt="developer" class="image">
+            <div class="overlay">Guilherme Cruz</div>
+        </div>
+
+
+        <img src="src/Imagens/turma.jpg">
+
+        <h2>Somos da Escola de Serviços e Comércio do Oeste (ESCO) 
+            da turma PSI3 do curso Técnico de Gestão e Programação 
+            de Sistemas Informáticos, densenvolvemos sites, e aplicaçoes este trabalho foi desenvolvido na comuraçao dos 150 anos da tabela periodica</h2>
+    </div>    
+
+    <script src="src/main.js"></script>
+
+</body>
+</html>
