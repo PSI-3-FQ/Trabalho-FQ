@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tabela Periodica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="src/tabela_periodica.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tabela Periodica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="src/tabela_periodica.css" />
+  <script src="main.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <section class="navItem shake slow">
-                
-            <div id="btn-menu">
-                <a href="index.html">
-                    <button type="button">
-                        <img src="src/icon/big-and-small-dots.svg" alt="">Página Principal</button></a>
-            </div>
-                
-            <div id="btn-esquerda">
-                <a href="tabela_periodica.html">
-                    <button type="button">
-                        <img src="src/icon/periodic-table.svg" alt="">Tabela Periódica</button></a>
-            </div>
-                
-            <div id="btn-meio">
-                <a href="developers.html">
-                    <button type="button">
-                        <img src="src/icon/multiple-users-silhouette.svg" alt="">Developers</button></a>
-            </div>
-                
-            <div id="btn-direita">
-                <a href="anos.html">
-                    <button type="button">
-                        <img src="src/icon/confetti.svg" alt="">150 Anos</button></a>
-            </div>
-                
-        </section>
-    </nav>
+  <nav>
+    <section class="navItem shake slow">
 
+      <div id="btn-menu">
+        <a href="index.html">
+          <button type="button">
+            <img src="src/icon/big-and-small-dots.svg" alt="">Página Principal</button></a>
+      </div>
+
+      <div id="btn-esquerda">
+        <a href="tabela_periodica.html">
+          <button type="button">
+            <img src="src/icon/periodic-table.svg" alt="">Tabela Periódica</button></a>
+      </div>
+
+      <div id="btn-meio">
+        <a href="developers.html">
+          <button type="button">
+            <img src="src/icon/multiple-users-silhouette.svg" alt="">Developers</button></a>
+      </div>
+
+      <div id="btn-direita">
+        <a href="anos.html">
+          <button type="button">
+            <img src="src/icon/confetti.svg" alt="">150 Anos</button></a>
+      </div>
+
+    </section>
+  </nav>
+
+  <div style="margin: 1% 10%">
     <div class="periodic">
       <div class="periodic-row">
         <div class="cell">
@@ -932,5 +935,15 @@
       </div>
       <div style="clear: both;"></div>
     </div>
+  </div>
+
+  <script>
+    $('.cell').click(function (){
+      var i = $(this).children(".element").children(".at_num").text();
+      console.log(i);
+      window.location.href = "./element?id="+i;
+    });
+  </script>
 </body>
+
 </html>

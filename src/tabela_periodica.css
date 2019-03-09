@@ -54,7 +54,7 @@ nav {
 }
 .navItem button {
   background-color: #34495e;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   font-size: 30px;
   top: 6%;
@@ -85,7 +85,7 @@ body {
 .periodic {
   position: relative;
   height: 200px;
-  margin-right: -1px;
+  margin-right: -1;
   text-shadow: none;
 }
 .periodic-row {
